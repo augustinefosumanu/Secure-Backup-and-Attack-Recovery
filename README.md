@@ -1,42 +1,13 @@
-# Secure Backup and Attack Recovery
+# Rezifp Pharma Backup Strategy & Security Testing Lab
+(Ficticious Organization)
 
-<h2> Scenario 1 </h2>
-In this hands-on lab, I will assume the role of a junior system administrator at Rezifp Pharma Inc., a leading pharmaceutical company specializing in oncology, immunology, and vaccine research. In response to recent malware attacks that have threatened the integrity of critical data, the company has decided to implement a more robust backup strategy. My task is to create daily full backups of the core files associated with the E-Prescription Treatment database, a crucial system for multiple departments across the organization.<br />
+<h2> Lab </h2>
+In this lab, I focused on enhancing data resilience and securing backup processes at Rezifp Pharma Inc. following recent malware attacks.<br />
 
-To safeguard this essential data, I will:<br />
-
--  Adhere to the department’s established naming conventions to create a consistent name for the backup archive.<br />
--  Perform a full daily backup of the files and directories located in ~/Documents/epscript, ensuring all critical data is securely archived.<br />
--  Document detailed file attributes, including permissions, ownership, size, and timestamps, for each file included in the archive.<br />
--  Verify the integrity of the archive after it’s created to ensure that no errors have occurred during the backup process.<br />
--  Generate a log file containing the output of the tar command, which will be reviewed by the SysOps team to assess file structure, permissions, and any potential errors.<br />
-
-<h2> Scenario 2 </h2>
-Following a recent malware attack, the E-Prescription Treatment database was restored using a backup. However, the recovery effort encountered a setback when it was discovered that the wrong backup had been used, leaving critical patient files missing. This error has forced the system offline once again, creating an urgent need to locate and restore the missing files.<br />
-
-After consulting with a pharmacy technician, I have received a list of affected patients whose files must be recovered. My mission is to:<br />
-
--  Inspect the archive contents to determine if the missing patient files are included.<br />
--  Create a dedicated directory to safely restore the identified patient files for further review.<br />
--  Extract only the specific patient files to the new directory, ensuring they are available for verification by the pharmacy technician.<br />
-
-<h2> Scenario 3 </h2>
-The company has recently implemented a new and robust backup policy to enhance data resilience. My mission is to validate the effectiveness of the backup and restoration process through two critical tests: restoring lost patient files and performing an incremental backup after simulating changes to the system.<br />
-
-To achieve this, I will:<br />
-
--  Test the restoration process:<br />
-
-  -  Start by listing and verifying the current files in the testenvir directory to establish a baseline.<br />
-  -  Create a level 0 (full) backup of the entire testenvir directory, ensuring all existing files are captured.<br />
-  -  Simulate a cyberattack by deleting the patient directory, which contains critical files, from the parent folder.<br />
-  -  Confirm the patient directory is missing to simulate the impact of the attack.<br />
-  -  Restore the missing directory from the full backup and verify that all files are successfully recovered.<br />
--  Test incremental backups:<br />
-
-  -  Introduce changes by creating three new files within the restored patient directory.<br />
-  -  Perform an incremental backup to capture only the new changes made to the directory.<br />
-  -  Verify that the newly added files are included in the incremental backup, confirming the backup system is functioning as intended.<br />
+-  Full & Incremental Backup Implementation: Created daily full backups of critical data and validated backup integrity. Performed incremental backups to capture system changes.<br />
+-  Data Restoration: Recovered missing patient files by inspecting and extracting data from backup archives, ensuring accurate restoration.<br />
+-  Backup System Testing: Simulated cyberattacks to verify backup restoration and validate system functionality.<br />
+-  Penetration Testing: Used wildpwn.py to identify potential privilege escalation vulnerabilities in the backup system and proposed mitigation strategies.<br />
 
 
 <h2> Step 1: Creating the Backup Archive </h2>
