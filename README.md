@@ -4,10 +4,10 @@
 <h2> Lab </h2>
 In this lab, I focused on enhancing data resilience and securing backup processes at Rezifp Pharma Inc. following recent malware attacks.<br />
 
--  Full & Incremental Backup Implementation: Created daily full backups of critical data and validated backup integrity. Performed incremental backups to capture system changes.<br />
--  Data Restoration: Recovered missing patient files by inspecting and extracting data from backup archives, ensuring accurate restoration.<br />
--  Backup System Testing: Simulated cyberattacks to verify backup restoration and validate system functionality.<br />
--  Penetration Testing: Used wildpwn.py to identify potential privilege escalation vulnerabilities in the backup system and proposed mitigation strategies.<br />
+-  <b>Full & Incremental Backup Implementation</b>: Created daily full backups of critical data and validated backup integrity. Performed incremental backups to capture system changes.<br />
+-  <b>Data Restoration</b>: Recovered missing patient files by inspecting and extracting data from backup archives, ensuring accurate restoration.<br />
+-  <b>Backup System Testing</b>: Simulated cyberattacks to verify backup restoration and validate system functionality.<br />
+-  <b>Penetration Testing</b>: Used wildpwn.py to identify potential privilege escalation vulnerabilities in the backup system and proposed mitigation strategies.<br />
 
 
 <h2> Step 1: Creating the Backup Archive </h2>
