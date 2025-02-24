@@ -2,11 +2,15 @@
 (Ficticious Organization)
 
 <h2> Lab </h2>
-In this lab, I focused on enhancing data resilience and securing backup processes at Rezifp Pharma Inc. following recent malware attacks.<br />
+This lab focused on strengthening data resilience and securing backup processes at Rezifp Pharma Inc. in response to recent malware attacks. I implemented robust backup strategies, ensured data integrity, and tested system recovery against potential threats.<br />
 
--  <b>Full & Incremental Backup Implementation</b>: Created daily full backups of critical data and validated backup integrity. Performed incremental backups to capture system changes.<br />
--  <b>Data Restoration</b>: Recovered missing patient files by inspecting and extracting data from backup archives, ensuring accurate restoration.<br />
--  <b>Backup System Testing</b>: Simulated cyberattacks to verify backup restoration and validate system functionality.<br />
+<h2>Technical Skills</h2>
+✅ Full & Incremental Backup Management<br />
+✅ Data Restoration & Integrity Validation<br />
+✅ Backup Security & Malware Resilience<br />
+✅ Archive Inspection & Recovery<br />
+✅ Disaster Recovery Planning<br />
+✅ Cyberattack Simulation & System Testing<br />
 
 
 <h2>  Creating the Backup Archive </h2>
